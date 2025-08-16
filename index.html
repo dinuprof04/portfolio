@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#github" class="nav-link">GitHub</a>
+  </div>
+
+  <!-- Hero Section with Video -->
+  <section id="home" class="video-container">
+    <video autoplay muted loop id="hero-video">
+      <source src="your-video.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <div class="video-text-overlay">
+      <h1>Welcome to My Portfolio</h1>
+      <p>Front-End & Back-End Enthusiast | Problem Solver | Creator</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section two-column-layout">
+    <div class="column">
+      <img src="images/myself.jpg" alt="Profile Image" class="profile-image">
+    </div>
+    <div class="column">
+      <h2>About Me</h2>
+      <p class="hover-text">
+        Hi! I'm an aspiring web developer passionate about creating clean and engaging user experiences. 
+        I specialize in HTML, CSS, and JavaScript, and I'm currently expanding my skills with Node.js and full-stack development.
+      </p>
+      <p class="hover-text">
+        My goal is to build applications that are not only functional but also delightful to use.
+      </p>
+    </div>
+  </section>
+
+  <!-- Featured Project Section -->
+  <section id="projects" class="section">
+    <h2>Featured Projects</h2>
+    <div class="image-overlay-container">
+      <img src="images/happy trails.png" alt="Project Screenshot" class="project-image">
+      <div class="image-fade-overlay">
+        <div class="image-overlay-text">The website is designed to connect animals in need with caring families by showcasing available pets and providing a clear way to begin the adoption journey. It is built with combining fundamental HTML structure with modern CSS features like Flexbox, Grid, sticky positioning, and transitions.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section">
+    <h2>Technical Skills</h2>
+    <table class="skills-table">
+      <thead>
+        <tr>
+          <th>Technology</th>
+          <th>Category</th>
+          <th>Proficiency</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>HTML5</td>
+          <td>Frontend</td>
+          <td>Expert</td>
+        </tr>
+        <tr>
+          <td>CSS3 & Flexbox</td>
+          <td>Frontend</td>
+          <td>Expert</td>
+        </tr>
+        <!-- <tr>
+          <td>JavaScript</td>
+          <td>Frontend</td>
+          <td>Intermediate</td>
+        </tr>
+        <tr>
+          <td>Node.js</td>
+          <td>Backend</td>
+          <td>Beginner</td>
+        </tr> -->
+      </tbody>
+    </table>
+  </section>
+
+  <!-- GitHub Section -->
+  <section id="github" class="section">
+    <h2>My GitHub</h2>
+    <p>
+      Check out my work and open-source contributions on 
+      <a href="https://github.com/dinuprof04" target="https://github.com/dinuprof04">GitHub</a>.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>© 2025 Dinesh Chimmani | Designed & Built by Me</p>
+  </footer>
+
+</body>
+</html>

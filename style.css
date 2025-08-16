@@ -1,0 +1,161 @@
+/* Basic Setup */
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding-top: 60px;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #004466;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.nav-link {
+  color: #f2f2f2;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #ffcc66; /* Custom hover highlight */
+  color: #222;
+}
+
+/* Hero Video */
+.video-container {
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.video-text-overlay {
+  color: #fff;
+  background-color: rgba(0,0,0,0.6);
+  padding: 25px 50px;
+  border-radius: 12px;
+}
+
+/* Two-Column Layout */
+.two-column-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.column {
+  width: 45%;
+  min-width: 300px;
+  padding: 15px;
+}
+
+/* Profile Image */
+.profile-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border-radius: 50%;
+  border: 6px solid #004466;
+  filter: grayscale(20%);
+}
+
+/* Project Image Overlay */
+.image-overlay-container {
+  position: relative;
+  width: 70%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+.project-image {
+  width: 100%;
+  border-radius: 10px;
+}
+.image-fade-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-color: rgba(0, 68, 102, 0.8);
+  opacity: 0;
+  border-radius: 10px;
+  transition: opacity 0.5s ease;
+}
+.image-overlay-container:hover .image-fade-overlay {
+  opacity: 1;
+}
+.image-overlay-text {
+  color: white;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Skills Table */
+.skills-table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+.skills-table th, .skills-table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+}
+.skills-table thead tr {
+  background-color: #004466;
+  color: white;
+}
+
+/* Hover Text Effect */
+.hover-text:hover {
+  color: #ff6600;
+  cursor: pointer;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #222;
+  color: #fff;
+  padding: 15px 0;
+}
+.site-footer p {
+  text-align: center;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  #about .column p {
+    color: blue;
+  }
+}
